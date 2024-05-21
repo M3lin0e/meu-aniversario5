@@ -1,0 +1,97 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffebda;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #834f23;
+    color: black;
+    font-family: serif;
+}
+
+header h1 {
+    font-size: 4vw; /* Tornando o título proporcional */
+    font-family: serif;
+}
+
+header p {
+    font-size: 3vw; /* Tornando o subtítulo proporcional */
+}
+
+p {
+    color: black;
+    text-align: center;
+    margin: 1vw 0; /* Espaçamento proporcional entre parágrafos */
+}
+
+main {
+    padding-top: 5vw; /* Espaçamento proporcional acima dos contêineres */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 2vw; /* Espaçamento proporcional entre os contêineres */
+    padding: 2vw;
+}
+
+.presentes {
+    flex: 0 0 calc(30% - 2vw); /* Largura proporcional dos contêineres */
+    max-width: calc(30% - 2vw);
+    padding: 2vw;
+    border: 1px solid black;
+    border-radius: 2vw;
+    background-color: #b88b5c;
+    text-align: center;
+}
+
+.presentes img.presente {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 2vw;
+}
+
+.presentes h2, .presentes p {
+    color: black;
+}
+
+button {
+    color: black;
+    background-color: #b88b5c;
+    border-radius: 5vw;
+    width: 20vw;
+}
+
+button:hover {
+    color: white;
+}
+
+/* Media query para dispositivos com largura de até 768 pixels (como celulares) */
+@media screen and (max-width: 768px) {
+    .presentes {
+        flex: 0 0 calc(100% - 2vw); /* Largura total dos contêineres */
+        max-width: calc(100% - 2vw);
+        margin-bottom: 2vw; /* Espaçamento inferior proporcional */
+    }
+
+    header h1 {
+        font-size: 8vw; /* Tamanho proporcional do título */
+    }
+
+    header p {
+        font-size: 6vw; /* Tamanho proporcional do subtítulo */
+    }
+}
+footer{
+    text-align: center;
+    padding: 20px;
+    background-color: #834f23;
+    color: black;
+    font-family: serif;
+}
+footer h6{
+    font-size: 20px;
+}
